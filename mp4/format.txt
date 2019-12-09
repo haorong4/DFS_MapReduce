@@ -1,0 +1,14 @@
+master -> maple worker:
+    files for maple:
+        MapleWorker\n<exe>\n<prefix>\n<file1> <file2> <file3>...\n
+        <! file is the remote filename !>
+    files for juice:
+        JuiceWorker\n<exe>\n<dest>\n<delete = 1 or 0>\n<file1> <file2>...\n
+worker -> master:
+    maple request:
+        MapleMaster\n<maple_exe>\n<num_maples>\n<sdfs_intermediate_filename_prefix>\n<sdfs_src_directory>
+exec -> maple:
+    key value\nkey value\n
+    
+syncFileMap: 
+    name1 name2 name3 name4 .... \n IP_1.1 IP_1.2 IP_1.3 IP_1.4 $ IP_2.1 IP_2.2 IP_2.3 IP_2.4 $ ... \n
